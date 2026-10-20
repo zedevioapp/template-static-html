@@ -1,0 +1,42 @@
+:root {
+  --teks: #201b4b;
+  --latar: #f4f4f8;
+  --aksen: #2f8f63;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background: var(--latar);
+  color: var(--teks);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 640px;
+}
+
+.label {
+  color: var(--aksen);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e7e6f2;
+}
